@@ -15,16 +15,17 @@ const game = function (eventoClick) {
             card[i].removeAttribute("onclick")
         }
     console.log(firstCard, secondCard)
-    setTimeout(function) {
-        let sameCards = controllaElementi()
+    //  setTimeout(function) {
+        let sameCards = ('🦁')
         if(sameCards === true){
             firstCard.classList.replace("hover", "match")
             secondCard.classList.replace("hover", "match")
         }else {
             firstCard.classList.remove("hover")
             secondCard.classList.remove("hover")
+            
         } 
-    }
+    // }
     console.log(firstCard, secondCard)
     }
 }
