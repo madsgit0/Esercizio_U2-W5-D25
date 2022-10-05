@@ -6,12 +6,15 @@
     border: #3889c4;
     background-color: aqua;
     cursor: pointer;
+    font-size: 0;
 }
 .hover{
     background-color:  #3889c4;
+    font-size: 20px;
 }
 
 .match{
     background-color: green;
+    font-size: 20px;
 }
 

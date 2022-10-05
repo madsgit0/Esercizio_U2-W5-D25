@@ -2,11 +2,8 @@ let card = document.getElementsByClassName("card")
 let firstCard
 let secondCard
 
-console.log(card)
-
 const game = function (eventoClick) {
     eventoClick.target.classList.add("hover")
-    console.log('la prima carta è: ', firstCard)
     if (firstCard === undefined){
         firstCard = eventoClick.target
     } else{
@@ -14,9 +11,9 @@ const game = function (eventoClick) {
         for(let i = 0; i < card.length; i++){
             card[i].removeAttribute("onclick")
         }
-    console.log(firstCard, secondCard)
+
         setTimeout(function() {
-            let sameCards = (true)
+            let sameCards = cardCheck()
             if(sameCards === true){
                 firstCard.classList.replace("hover", "match")
                 secondCard.classList.replace("hover", "match")
